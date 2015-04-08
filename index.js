@@ -2,7 +2,6 @@ var express = require('express')
 var app = express();
 
 app.set('port', (process.env.PORT || 8080))
-app.use(express.static(__dirname + '/public'))
 
 app.get('/I/want/title/', function(request, response) {
     var query = require('url').parse(request.url,true).query;
@@ -19,11 +18,10 @@ app.get('/I/want/title/', function(request, response) {
   		response.write("<body>");
   		response.write("<h1> Following are the titles of given websites: </h1>");
   		for (key in addresses) {
-		response.write("<ul>");
-  		response.write(addresses[key]);	
-    	response.write("</ul>");
-  		console.log(addresses[key]);
-    	}
+		   response.write("<ul>");
+  		 response.write(addresses[key]);	
+    	 response.write("</ul>");
+  		}
   		response.write("</body>");
   		response.write("</html>");
   		response.end();
