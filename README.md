@@ -1,10 +1,10 @@
-### nodejs-learning###
-#pre-requisites#
+# nodejs-learning #
+###pre-requisites###
 * npm (node package manager)
 * nvm (node version manager)
 * nodejs
 
-#Steps#
+### Steps ###
 * Change your current working directory to that of this repository
 * Check whether your current directory is correct using 'pwd' command.
 * run 'npm install' command
